@@ -1,8 +1,8 @@
-Step 1: Set up and planning
-Set up your git repository (refer to past projects if you need a refresher).
-Set up your HTML and CSS files with some simple dummy content, just to make sure you have everything linked correctly.
-Download a full-resolution copy of the design file, and get a general idea for how you’re going to need to lay things out in your HTML document.
-Step 2: Gather assets
+Step 1: Set up and planning //done
+Set up your git repository (refer to past projects if you need a refresher). // done
+Set up your HTML and CSS files with some simple dummy content, just to make sure you have everything linked correctly. //done
+Download a full-resolution copy of the design file, and get a general idea for how you’re going to need to lay things out in your HTML document. //done
+Step 2: Gather assets //done
 The design has a large background-image, so go find and download an image you want to use for that section. The one in the design can be found on unsplash.com, but feel free to select your own. Be sure to credit the creator of your image!
 Pick an external font for the ‘logo’ section. We’ve used Norse Bold, but you can use any font you like.
 For the image-sidebar, we’ve used this Odin logo. Again, feel free to replace it.
