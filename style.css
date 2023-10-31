@@ -17,6 +17,8 @@
   --white: #f5f5f5;
   --black: #1e1d32;
   --grey: #c6c5d1;
+  --green-valid: #a8df8e;
+  --red-invalid: #ed2b2a;
   --heading-font: "Raleway", sans-serif;
 }
 body {
@@ -99,6 +101,16 @@ input {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+input:valid {
+  border: 2px solid var(--green-valid);
+  box-shadow: 0px 0px 15px -3px var(--green-valid);
+}
+input:invalid {
+  border: 2px solid var(--red-invalid);
+  box-shadow: 0px 0px 15px -3px var(--red-invalid);
+}
+
 label {
   font-size: 1.05rem;
   font-weight: 600;

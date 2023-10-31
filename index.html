@@ -17,7 +17,15 @@
           <div class="wrapper">
             <div class="left-side">
               <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" />
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                maxlength="32"
+                name="first_name"
+                pattern="[A-Za-z]{1,32}"
+                required
+              />
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
               <label for="password">Password</label>
@@ -25,15 +33,22 @@
             </div>
             <div class="right-side">
               <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" />
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                maxlength="32"
+                pattern="[A-Za-z]{1,32}"
+                required
+              />
               <label for="phone-number">Phone Number</label>
               <input
                 type="text"
                 name="phone-number"
-                minlength="10"
+                minlength="9"
                 maxlength="10"
                 title="phone-number"
-                pattern="[0-10]"
+                pattern="[0-9]"
               />
               <label for="confirm">Confirm Passoword</label>
               <input type="password" name="confirm" id="confirm" />
