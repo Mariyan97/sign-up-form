@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="app.js" defer></script> -->
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="main">
@@ -16,8 +16,9 @@
       <div class="form-content">
         <form action="#" method="post">
           <div class="wrapper">
+            <!-- LEFT SIDE OF THE FORM -->
             <div class="left-side">
-              <label for="first-name">First Name</label>
+              <label for="first-name">First Name*</label>
               <input
                 type="text"
                 name="first-name"
@@ -27,13 +28,15 @@
                 pattern="[A-Za-z]{1,32}"
                 required
               />
-              <label for="email">Email</label>
+              <label for="email">Email*</label>
               <input type="email" name="email" id="email" required />
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+
+              <label for="password">Password*</label>
+              <input type="password" name="password" id="password" required />
             </div>
+            <!-- RIGHT SIDE OF THE FORM -->
             <div class="right-side">
-              <label for="last-name">Last Name</label>
+              <label for="last-name">Last Name*</label>
               <input
                 type="text"
                 name="last-name"
@@ -42,16 +45,16 @@
                 pattern="[A-Za-z]{1,32}"
                 required
               />
-              <label for="phone-number">Phone Number</label>
+              <label for="phone">Phone Number*</label>
               <input
-                type="text"
-                name="phone-number"
-                minlength="9"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                 maxlength="10"
-                title="phone-number"
-                pattern="[0-9]"
+                required
               />
-              <label for="confirm">Confirm Passoword</label>
+              <label for="confirm">Confirm Passoword*</label>
               <input type="password" name="confirm" id="confirm" />
             </div>
           </div>

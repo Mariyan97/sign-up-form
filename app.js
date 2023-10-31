@@ -1,10 +1,16 @@
-function emptyField() {
-  let field = document.querySelectorAll("input");
+//Valid & invalid form elements removal on loading.
+window.addEventListener("load", function () {
+  const inputs = document.querySelectorAll("input");
 
-  if (field.value !== "") {
-    field.style.backgroundColor = "white";
-  } else {
-    field.style.backgroundColor = "red";
-  }
-}
-emptyField();
+  inputs.forEach(function (input) {
+    input.classList.add("default");
+
+    input.addEventListener("input", function () {
+      if (input.value.trim() !== "") {
+        input.classList.remove("default");
+      } else {
+        input.classList.add("default");
+      }
+    });
+  });
+});
